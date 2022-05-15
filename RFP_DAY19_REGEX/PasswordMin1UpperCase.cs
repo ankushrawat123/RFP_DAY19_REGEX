@@ -9,7 +9,7 @@ namespace RFP_DAY19_REGEX
 {
     internal class PasswordMin1UpperCase
     {
-        public String Regex_Pwd_1UpperCase = "^[A-z]+[A-Z a-z 0-9 $#@!&*?|]{7,}$";
+        public String Regex_Pwd_1UpperCase = "^[A-Z]+[A-Z a-z 0-9 $#@!&*?|]{7,}$";
         public bool PwdUpperCase(string PwdUpperCase)
         {
             return Regex.IsMatch(PwdUpperCase, Regex_Pwd_1UpperCase);

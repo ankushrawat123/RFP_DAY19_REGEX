@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using RFP_DAY19_REGEX;
 Console.WriteLine("Welcome to REGEX PROGRAM!\n");
-Console.WriteLine("ENTER \n1 FOR VALIDATE FIRSTNAME REGEX PROGRAM \n2 FOR VALIDATE LASTNAME REGEX PROGRAM\n3 FOR VALIDATE EMAIL REGEX PROGRAM\n");
+Console.WriteLine("ENTER \n1 FOR VALIDATE FIRSTNAME REGEX PROGRAM \n2 FOR VALIDATE LASTNAME REGEX PROGRAM\n3 FOR VALIDATE EMAIL REGEX PROGRAM\n4 FOR VALIDATE MOBILE REGEX PROGRAM\n");
 int num = Convert.ToInt32(Console.ReadLine());
 switch (num)
 {
@@ -41,4 +41,15 @@ switch (num)
         }
         break;
 
+    case 4:
+        ValidateMobile MobileObj = new ValidateMobile();    
+        if(MobileObj.Validate_Mobile("91 8734233456"))
+        {
+            Console.WriteLine("Valid");
+        }
+        else
+        {
+            Console.WriteLine("Invalid");
+        }
+        break;
 }

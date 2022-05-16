@@ -13,7 +13,6 @@ namespace RFP_DAY19_REGEX
         public bool Validate_Email(string Email)
         {
             return Regex.IsMatch(Email, Regex_Email);
-        }
-        
+        }       
     }
 }

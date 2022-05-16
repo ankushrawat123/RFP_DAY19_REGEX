@@ -14,7 +14,5 @@ namespace RFP_DAY19_REGEX
         {
          return Regex.IsMatch(Name, Regex_Name);
         }
-
-        
     }
 }
